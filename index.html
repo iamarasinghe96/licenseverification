@@ -16,41 +16,17 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        border: "hsl(220 13% 91%)",
-                        input: "hsl(220 13% 82%)",
-                        ring: "hsl(210 85% 35%)",
-                        background: "hsl(0 0% 100%)",
-                        foreground: "hsl(220 15% 12%)",
-                        primary: {
-                            DEFAULT: "hsl(210 85% 35%)",
-                            foreground: "hsl(210 80% 98%)",
-                        },
-                        secondary: {
-                            DEFAULT: "hsl(210 12% 90%)",
-                            foreground: "hsl(220 15% 12%)",
-                        },
-                        destructive: {
-                            DEFAULT: "hsl(0 72% 42%)",
-                            foreground: "hsl(0 70% 98%)",
-                        },
-                        muted: {
-                            DEFAULT: "hsl(210 10% 92%)",
-                            foreground: "hsl(220 12% 35%)",
-                        },
-                        accent: {
-                            DEFAULT: "hsl(210 12% 94%)",
-                            foreground: "hsl(220 15% 12%)",
-                        },
-                        popover: {
-                            DEFAULT: "hsl(0 0% 95%)",
-                            foreground: "hsl(220 15% 12%)",
-                        },
-                        card: {
-                            DEFAULT: "hsl(0 0% 98%)",
-                            foreground: "hsl(220 15% 12%)",
-                        },
-                    },
+          colors: {
+            border: "hsl(214.3 31.8% 91.4%)",
+            input: "hsl(214.3 31.8% 91.4%)",
+            ring: "hsl(200 100% 40%)",
+            background: "hsl(0 0% 100%)",
+            foreground: "hsl(215 20% 20%)",
+            primary: {
+              DEFAULT: "hsl(200 100% 40%)",
+              foreground: "hsl(0 0% 100%)",
+            }
+          }
                     borderRadius: {
                         lg: "0.5rem",
                         md: "calc(0.5rem - 2px)",
@@ -123,15 +99,15 @@
     </header>
 
     <!-- Navigation -->
-    <nav class="bg-[#006699] text-white shadow-md relative z-40">
+    <nav class="bg-[hsl(200,100%,40%)] text-white shadow-md relative z-40">
         <div class="container mx-auto px-4 md:px-8">
             
             <!-- Desktop Menu -->
             <ul class="hidden md:flex flex-wrap">
-                <li><a href="#" class="block px-6 py-4 text-base font-medium transition-colors duration-200 hover:bg-[#005580]">Home</a></li>
-                <li><a href="#" class="block px-6 py-4 text-base font-medium transition-colors duration-200 bg-[#004d73]">Personal Licenses</a></li>
-                <li><a href="#" class="block px-6 py-4 text-base font-medium transition-colors duration-200 hover:bg-[#005580]">Log a flight</a></li>
-                <li><a href="#" class="block px-6 py-4 text-base font-medium transition-colors duration-200 hover:bg-[#005580]">Pilot Registration</a></li>
+                <li><a href="https://portal.caa.lk/drone/apply-now/report.php" class="block px-6 py-4 text-base font-medium transition-colors duration-200 hover:bg-[hsl(200,100%,35%)]">Home</a></li>
+                <li><a href="https://iamarasinghe96.github.io/licenseverification/" class="block px-6 py-4 text-base font-medium transition-colors duration-200 bg-[hsl(205,100%,30%)]">Personal Licenses</a></li>
+                <li><a href="https://portal.caa.lk/drone/apply-now/report.php" class="block px-6 py-4 text-base font-medium transition-colors duration-200 hover:bg-[hsl(200,100%,35%)]">Log a flight</a></li>
+                <li><a href="https://iamarasinghe96.github.io/pilotregistration/" class="block px-6 py-4 text-base font-medium transition-colors duration-200 hover:bg-[hsl(200,100%,35%)]">Pilot Registration</a></li>
             </ul>
 
             <!-- Mobile Menu Bar -->
@@ -149,7 +125,7 @@
                 
                 <!-- Panel -->
                 <div class="relative w-[300px] sm:w-[400px] bg-white h-full shadow-xl flex flex-col z-50 animate-in slide-in-from-right duration-200">
-                    <div class="bg-[#006699] p-6 text-white relative">
+                    <div class="bg-[hsl(200,100%,40%)] p-6 text-white relative">
                         <button id="mobile-menu-close-btn" class="absolute right-4 top-4 text-white/70 hover:text-white">
                             <i data-lucide="x" class="h-6 w-6"></i>
                         </button>
@@ -159,9 +135,9 @@
 
                     <div class="flex flex-col gap-2 px-4 py-4">
                         <a href="#" class="px-4 py-3 text-base font-medium rounded-xl transition-all duration-200 flex items-center text-gray-700 hover:bg-gray-50 hover:pl-6">Home</a>
-                        <a href="#" class="px-4 py-3 text-base font-medium rounded-xl transition-all duration-200 flex items-center text-[#006699] bg-blue-50 ring-1 ring-blue-100 shadow-sm">Personal Licenses</a>
-                        <a href="#" class="px-4 py-3 text-base font-medium rounded-xl transition-all duration-200 flex items-center text-gray-700 hover:bg-gray-50 hover:pl-6">Log a flight</a>
-                        <a href="#" class="px-4 py-3 text-base font-medium rounded-xl transition-all duration-200 flex items-center text-gray-700 hover:bg-gray-50 hover:pl-6">Pilot Registration</a>
+                        <a href="#" class="px-4 py-3 text-base font-medium rounded-xl transition-all duration-200 flex items-center text-[hsl(200,100%,40%)] bg-blue-50 ring-1 ring-blue-100 shadow-sm">Personal Licenses</a>
+                        <a href="https://portal.caa.lk/drone/apply-now/report.php" class="px-4 py-3 text-base font-medium rounded-xl transition-all duration-200 flex items-center text-gray-700 hover:bg-gray-50 hover:pl-6">Log a flight</a>
+                        <a href="https://iamarasinghe96.github.io/pilotregistration/" class="px-4 py-3 text-base font-medium rounded-xl transition-all duration-200 flex items-center text-gray-700 hover:bg-gray-50 hover:pl-6">Pilot Registration</a>
                     </div>
 
                     <div class="mt-auto p-6 border-t border-gray-100">
@@ -456,7 +432,7 @@
             let badgeClass = '';
             let icon = '';
             let text = '';
-            
+
             if (status === 'approved' || status === 'granted') {
                 badgeClass = 'bg-green-600 text-white';
                 icon = '<i data-lucide="check-circle" class="w-4 h-4"></i>';
@@ -465,7 +441,7 @@
                 badgeClass = 'bg-amber-500 text-white';
                 icon = '<i data-lucide="clock" class="w-4 h-4"></i>';
                 text = 'On-Hold';
-            } else if (status === 'pending') { // Change 'Pending' to 'pending'
+            } else if (status === 'pending') {
                 badgeClass = 'bg-amber-500 text-white';
                 icon = '<i data-lucide="clock" class="w-4 h-4"></i>';
                 text = 'Pending';
@@ -474,7 +450,7 @@
                 icon = '<i data-lucide="alert-circle" class="w-4 h-4"></i>';
                 text = 'Expired';
             }
-            
+
             statusBadge.className = `inline-flex items-center rounded-full px-3 py-1 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 gap-1 ${badgeClass}`;
             statusBadge.innerHTML = `${icon} ${text}`;
 
