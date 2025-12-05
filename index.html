@@ -456,7 +456,7 @@
             let badgeClass = '';
             let icon = '';
             let text = '';
-
+            
             if (status === 'approved' || status === 'granted') {
                 badgeClass = 'bg-green-600 text-white';
                 icon = '<i data-lucide="check-circle" class="w-4 h-4"></i>';
@@ -465,7 +465,7 @@
                 badgeClass = 'bg-amber-500 text-white';
                 icon = '<i data-lucide="clock" class="w-4 h-4"></i>';
                 text = 'On-Hold';
-            } else if (status === 'pending' || status === 'pending') {
+            } else if (status === 'pending') { // Change 'Pending' to 'pending'
                 badgeClass = 'bg-amber-500 text-white';
                 icon = '<i data-lucide="clock" class="w-4 h-4"></i>';
                 text = 'Pending';
@@ -474,7 +474,7 @@
                 icon = '<i data-lucide="alert-circle" class="w-4 h-4"></i>';
                 text = 'Expired';
             }
-
+            
             statusBadge.className = `inline-flex items-center rounded-full px-3 py-1 text-sm font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 gap-1 ${badgeClass}`;
             statusBadge.innerHTML = `${icon} ${text}`;
 
